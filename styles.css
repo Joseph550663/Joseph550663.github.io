@@ -36,6 +36,35 @@ button:hover{background:#333}
 @media (min-width:700px){.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.form-grid .full{grid-column:1/-1}}
 footer[role="contentinfo"]{text-align:center;padding:20px;color:var(--muted);font-size:0.95rem}
 .feedback{margin-top:12px;color:#333}
+
+/* Upholstery image grid */
+.upholstery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.upholstery-grid img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 14px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .upholstery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+/* Phone */
+@media (max-width: 500px) {
+  .upholstery-grid {
+    grid-template-columns: 1fr;
+  }
+
 /* Upholstery Video Grid */
 .video-grid {
   display: grid;
@@ -60,6 +89,5 @@ footer[role="contentinfo"]{text-align:center;padding:20px;color:var(--muted);fon
 }
 
 
-}
 
 
